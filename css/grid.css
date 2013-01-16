@@ -1,0 +1,208 @@
+/* theme for brainrocketband.com */
+
+/* ================ */
+/* = The 1Kb Grid = */     /* 12 columns, 60 pixels each, with 20 pixel gutter */
+/* ================ */
+
+/* color: #A94438; */
+
+body { 
+	background-color:#ffff81;
+	background-image: url(../images/brainrocket600.png);
+	background-position: 130px 80px;
+	background-repeat: repeat;
+	color: #A94438;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	min-height:1300px;
+	position:relative;
+	width: 100%;
+}
+
+header,
+section,
+footer {
+	margin:0 auto;
+	padding:0;
+}
+
+header,
+footer {
+		width: 100%;
+}
+
+.logo {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    margin: 10px auto 0;
+    padding-left: 20%;
+}
+
+.tagline {
+	margin: 0 auto;
+}
+
+a, a:visited {
+	color: #4680b2;
+	color: rgba (70,128, 178, 1.0);
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover, a:focus {
+	color:#3e6296;
+	color: rgba (62,98,150, 1.0);
+	text-decoration:underline;
+}
+
+h1,h2,h3,h4,h5 {
+	margin:20px 0 0;
+}
+
+h1, h1 a {
+	font-size:36px;
+	color: #a94438;
+	font-weight:200;
+	text-align:center;
+}
+
+h2 {
+    color: #A94438;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+h3 {
+     color: #A94438;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+h4 {
+	font-size: 16px;
+	color: # #fbd79d;
+	font-weight:normal;
+	text-align:right;
+}
+
+h5 {
+	font-size: 14px;
+	color: #A94438;
+	font-weight:normal;
+	text-align:left;
+}
+
+p {
+	font-size:14px;
+	color: #A94438;
+	margin: 20px;
+}
+
+#cauliflower {
+	position:absolute;
+	top:250px;
+	left:170px;
+}
+
+#rocket {
+	margin: 0px 0 0 300px;
+}
+
+#band {
+	color: #000000;
+    font-weight: 600;
+    margin-left: 15%;
+    text-align: center;
+    width: 20%;
+}
+
+#audio{
+   	left: 855px;
+    position: absolute;
+    top: 322px;
+}
+
+#twit {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+	margin: 78px 0 0 60px;
+}
+
+.twtr-doc {
+	width:20%;
+}
+
+#photos {
+	height:1200px;
+	position:absolute;
+	top:300px;
+	left:600px;
+}
+
+.left{
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.bg-image-left,
+.footer {
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+
+.bg-image-right,
+.footer {
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+
+/* start grid*/
+.grid_1 { width:60px; }
+.grid_2 { width:140px; }
+.grid_3 { width:220px; }
+.grid_4 { width:300px; }
+.grid_5 { width:380px; }
+.grid_6 { width:460px; }
+.grid_7 { width:540px; }
+.grid_8 { width:620px; }
+.grid_9 { width:700px; }
+.grid_10 { width:780px; }
+.grid_11 { width:860px; }
+.grid_12 { width:940px; }
+
+.column {
+	margin: 0 10px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+}
+.row {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.row .row {
+	margin: 0 -10px;
+	width: auto;
+	display: inline-block;
+}
+
+.centered {
+	text-align:center;
+}
+
+.height_200 {
+	height:200px;
+}
+
+/* end grid*/
