@@ -6,7 +6,8 @@
 	<title>Brain Rocket | A New Band from Oakland, CA</title>
     <meta name ="description" content="We play ROCK! Brain Rocket is a post-punk/alt-rock band from Oakland/ San Francisco Bay Area playing original music." />
     <meta name = "keyword" content="post-punk, alt-rock, oakland, san francisco bay area" />
-	<link href="grid.css" type="text/css" rel="stylesheet" media="screen"/>
+	<link href="css/grid.css" type="text/css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/brain-rocket-jplayer.css"> 
     <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -26,58 +27,65 @@
     <div class="column grid_5" id="cauliflower">
     
     <div id="twit">
-    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-	<script>
-	new TWTR.Widget({
-  		version: 2,
-	  type: 'profile',
-	  rpp: 4,
-	  interval: 30000,
-	  width: 300,
-	  height: 300,
-	  theme: {
-	    shell: {
-	      background: 'transparent',
-	      color: '#a94438'
-	    },
-	    tweets: {
-	      background: 'transparent',
-	      color: '#ffffff',
-		  links: '#fbd79d'
-	    }
-	  },
-	  features: {
-	    scrollbar: false,
-	    loop: false,
-	    live: false,
- 	   behavior: 'all'
- 	 }
-	}).render().setUser('BRAINROCKET').start();
-	</script>
+			<a class="twitter-timeline" width="300" height="300" href="https://twitter.com/BRAINROCKET" data-widget-id="355828453414690816">Tweets by @BRAINROCKET</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
   </div>
 </div>
   <div class="column grid_3"><p>&nbsp;</p></div>
   <div class="column grid_4" id="rocket"><p>&nbsp;</p></div>
 	</div>
+<div id="audio">
 
-	<div id="audio">
-    	<h3>music samples</h3>
-   		<h4>bad daughter</h4>
-	    <audio controls src="audio/Bad Daughter 1_17.ogg"></audio>
-	    <h4>7 year itch</h4>
-		<audio controls src="audio/7 year itch 11_3.ogg"></audio>
-	    <h4>just like you</h4>
-	    <audio controls src="audio/just like you 11-15.ogg"></audio>
-	    <h4>conundrum of monogamy</h4>
- 	   <audio controls src="audio/Conundrum of Monogamy 10_11.ogg"></audio>
- 	   <h4>good times</h4>
- 	   <audio controls src="audio/good times 11-15.ogg"></audio>
- 	   <h4>summer fall</h4>
- 	   <audio controls src="audio/summer fall 11_3.ogg"></audio>
- 	   <h4>not like you</h4>
-  	  <audio controls src="audio/not like you 11_3.ogg"></audio>
-	</div>
-	<div class="row">
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+		<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+
+						</div>
+					</div>
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+					<div class="jp-current-time"></div>
+					<div class="jp-duration"></div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+        
+        
+        
+	</div> <!-- end audio -->
+<div class="row">
 		<div class="column grid_3"><p>&nbsp;</p></div>
 		<div class="column grid_6" id="band">contact us:<br /> info [at] brainrocketband [dot] com</div>
 		<div class="column grid_3"><p>&nbsp;</p></div>
@@ -90,6 +98,60 @@
 </footer>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"Bad Daughter",
+			mp3:"audio/Bad_Daughter_1_17.mp3",
+			oga:"audio/Bad_Daughter_1_17.ogg"
+		},
+		{
+			title:"7 Year Itch",
+			mp3:"audio/7_year_itch_11_3.mp3",
+			oga:"audio/7_year_itch_11_3.ogg"
+		},
+		{
+			title:"Good Times",
+			mp3:"audio/good_times_3-12.mp3",
+			oga:"audio/good_times_3-12.ogg"
+		},
+		{
+			title:"Motorcycle Automobile",
+			mp3:"audio/motorcycle_automobile_5_12.mp3",
+			oga:"audio/motorcycle_automobile_5_12.ogg"
+		},
+		{
+			title:"Not Like You",
+			mp3:"audio/not_like_you_11_3.mp3",
+			oga:"audio/not_like_you_11_3.ogg"
+		},
+		{
+			title:"Summer Fall",
+			mp3:"audio/summer_fall_3-12.mp3",
+			oga:"audio/summer_fall_3-12.ogg"
+		},
+		{
+			title:"UXO",
+			mp3:"audio/UXO_3_12.mp3",
+			oga:"audio/UXO_3_12.ogg"
+		},
+
+	], {
+		swfPath: "js",
+		supplied: "oga, mp3",
+		wmode: "window"
+	});
+});
+//]]>
+</script>
 
 </html>
